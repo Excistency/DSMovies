@@ -4,6 +4,7 @@
     --Blue1: rgb(13, 210, 253);
     --Pink1: rgb(241, 112, 212);
     --Black1: rgb(0, 0, 0);
+    --white1: rgb(255, 255, 255);
 }
 * {
     box-sizing: border-box;
@@ -55,3 +56,45 @@ nav a {
 .dsmovies-contact-container img {
     margin-right: 5px;
 }
+
+.dsmovies-card {
+    width: 360px;
+}
+
+#dsmovies-card-list {
+    padding: 40px 0;
+}
+
+.dsmovies-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.dsmovies-card-description {
+    background-color: var(--white1);
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovies-card-description h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--Black1);
+
+}
+
+.dsmovies-btn, .dsmovies-btn:hover {
+    width: 180px;
+    height: 40px;
+    background-color: var(--Black1);
+    color: var(--white1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
