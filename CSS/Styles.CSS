@@ -1,26 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
+:root {
+    --Blue1: rgb(13, 210, 253);
+    --Pink1: rgb(241, 112, 212);
+    --Black1: rgb(0, 0, 0);
+}
 * {
     box-sizing: border-box;
     font-family: 'Oswald'; Oswald-serif;
 }
 
-header {
-    background-color: rgb(13, 210, 253);
-    color: rgb(241, 112, 212)
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
+header {
+    background-color: var(--Black1);
+    color: var(--Pink1);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
 html, body {
-    background-color: rgb(13, 210, 253);
+    background-color: var(--Blue1);
 }
 
 a, a:hover {
     text-decoration: none;
     color: unset;
-
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dsmovies-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovies-contact-container img {
+    margin-right: 5px;
 }
