@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 * {
+    box-sizing: border-box;
     font-family: 'Oswald'; Oswald-serif;
 }
-h1 {
-    color: rgb(255, 174, 237);
+
+header {
+    background-color: rgb(13, 210, 253);
+    color: rgb(241, 112, 212)
+}
+html, body {
+    background-color: rgb(13, 210, 253);
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
