@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 :root {
-    --Blue1: rgb(13, 210, 253);
-    --Pink1: rgb(241, 112, 212);
-    --Pink2: rgb(255, 203, 244);
+    --Blue1: #0dd1fd;
+    --Pink1: #f170d4;
+    --Pink2: hsl(313, 100%, 90%);
     --Black1: rgb(0, 0, 0);
     --white1: rgb(255, 255, 255);
+    --Grey: rgb(133, 133, 133);
 }
 * {
     box-sizing: border-box;
@@ -15,6 +16,7 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 header {
     background-color: var(--Black1);
     color: var(--Pink1);
@@ -24,7 +26,7 @@ header {
 }
 
 html, body {
-    background-color: var(--Blue1);
+    background: -webkit-gradient(linear, left top, right bottom, from(#0dd1fd), to(#f170d4));
 }
 
 a, a:hover {
@@ -63,12 +65,15 @@ nav a {
 }
 
 #dsmovies-card-list {
-    padding: 40px 0;
+    padding: 40px 15px;
 }
 
 .dsmovies-card img {
     width: 100%;
     border-radius: 8px 8px 0 0;
+    border-top: 1px double var(--Black1);
+    border-left: 1px double var(--Black1);
+    border-right: 1px double var(--Black1);
 }
 
 .dsmovies-card-description {
@@ -80,6 +85,9 @@ nav a {
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
     height: 235px;
+    border-bottom: 1px double var(--Black1);
+    border-left: 1px double var(--Black1);
+    border-right: 1px double var(--Black1);
 }
 
 .dsmovies-card-description h3 {
@@ -92,6 +100,7 @@ nav a {
 
 .card-description img {
     width: 22px;
+    border: none;
 }
 
 .card-description {
@@ -105,6 +114,7 @@ nav a {
     font-size: 25px;
     font-weight: 700;
 }
+
 .card-description p {
     margin-bottom: 10px;
     font-size: 16px;
