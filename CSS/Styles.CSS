@@ -19,8 +19,7 @@ header {
     color: var(--Pink1);
     height: 100px;
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 html, body {
@@ -60,7 +59,6 @@ nav a {
 
 .dsmovies-card {
     width: 100%;
-    
 }
 
 #dsmovies-card-list {
@@ -102,3 +100,13 @@ nav a {
     border-radius: 4px;
 }
 
+.dsmovies-form-container {
+    padding: 40px 0;
+    max-width: 480px;
+}
+
+.dsmovies-form-description {
+    background-color: var(--Black1);
+    border-radius: 0 0 8px 8px;
+    min-height: 250px;
+}
