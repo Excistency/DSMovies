@@ -32,15 +32,26 @@
                         <img src="img/Duna.svg" alt="Duna">
                         <div class="dsmovies-form-description">
                             <h3>Duna</h3>
-                            <form>
-                              <div>
-                                <form>
+                            <form class="dsmovies-form">
+                              <div class="form-group dsmovies-form-group">
                                   <label for="email">Informe seu Email</label>
-                                  <input type="email" id="email">
-                                </form>
+                                  <input class="form-control" type="email" id="email">
+                              </div>
+                              <div class="form-group dsmovies-form-group">
+                                <label for="score">Informe sua Avaliação</label>
+                                <select class="form-control" name="socre" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                              </select>
+                              </div>
+                              <div class="dsmovies-form-btn-container">
+                                <button class="dsmovies-btn" type="submit">Salvar</button>
+                                <a class="dsmovies-btn" href="index.html">Cancelar</a>
                               </div>
                             </form>
-                            <a class="dsmovies-btn" href="index.html">Cancelar</a>
                         </div>
                     </div>
                 </div>
