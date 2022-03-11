@@ -9,6 +9,7 @@
     --Grey: rgb(133, 133, 133);
     --Yellow1: rgb(255, 187, 58);
 }
+
 * {
     box-sizing: border-box;
     font-family: 'Oswald'; Oswald-serif;
@@ -17,6 +18,7 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 header {
     background-color: var(--Black1);
     color: var(--Pink1);
@@ -25,8 +27,12 @@ header {
     align-items: center;  
 }
 
+header a {
+    color: var(--Blue1);
+}
+
 html, body {
-    background: -webkit-gradient(linear, left top, right bottom, from(#0dd1fd), to(#f170d4));
+    background: -webkit-gradient(linear, left top, right bottom, from(#f170d4), to(#0dd1fd));
 }
 
 a, a:hover {
@@ -74,6 +80,14 @@ nav a {
     border-top: 1px double var(--Black1);
     border-left: 1px double var(--Black1);
     border-right: 1px double var(--Black1);
+}
+
+.fill-1 {
+    /* Background - Gradient*/
+    background: -webkit-linear-gradient(left top, #0dd1fd 0%, #f170d4 100%);
+    background: linear-gradient(to right bottom, #0dd1fd 0%, #f170d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .dsmovies-card-description {
@@ -125,7 +139,7 @@ nav a {
 .dsmovies-btn, .dsmovies-btn:hover {
     width: 180px;
     height: 40px;
-    background-color: var(--Blue1);
+    background: -webkit-gradient(linear, left top, right bottom, from(#0dd1fd), to(#f170d4));
     color: var(--white1);
     display: flex;
     align-items: center;
@@ -161,11 +175,11 @@ nav a {
 
 .dsmovies-form-group {
     margin-bottom: 20px;
+    color: var(--Blue1);
 }
 
 .dsmovies-form-group label {
     font-size: 16px;
-    color: var(--Blue1);
 }
 
 .dsmovies-form-btn-container {
