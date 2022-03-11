@@ -4,15 +4,16 @@
     --Blue1: #0dd1fd;
     --Pink1: #f170d4;
     --Pink2: hsl(313, 100%, 90%);
-    --Black1: rgb(0, 0, 0);
+    --Black1: #000000;
     --white1: rgb(255, 255, 255);
-    --Grey: rgb(133, 133, 133);
+    --Grey1: rgb(133, 133, 133);
+    --Grey2: rgb(202, 202, 202);
     --Yellow1: rgb(255, 187, 58);
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Oswald'; Oswald-serif;
+    font-family: 'Oswald', Oswald-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: var(--Black1);
     color: var(--Pink1);
-    height: 100px;
+    height: 70px;
     display: flex;
     align-items: center;  
 }
@@ -66,12 +67,61 @@ nav a {
     margin-left: 10px;
 }
 
+.dsmovies-pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.dsmovies-pagination-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.dsmovies-pagination-box p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Black1);
+}
+
+.dsmovies-pagination-box button {
+    background-color: transparent; 
+    width: 80px;
+    height: 40px;
+    border: 1px solid var(--Black1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dsmovies-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7442%) hue-rotate(307deg) brightness(85%) contrast(112%);
+}
+.dsmovies-pagination-box button:disabled {
+    border: 1px solid var(--Grey2);
+}
+
+.dsmovies-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.flip-horizontal {
+    transform: rotate(180deg);
+}
+
 .dsmovies-card {
     width: 100%;
 }
 
 #dsmovies-card-list {
-    padding: 40px 15px;
+    padding: 0 15px;
 }
 
 .dsmovies-card img {
